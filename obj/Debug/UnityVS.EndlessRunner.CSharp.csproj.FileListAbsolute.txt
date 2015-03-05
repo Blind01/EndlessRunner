@@ -1,0 +1,11 @@
+E:\Dev\Uni\GameDev\EndlessRunner\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+E:\Dev\Uni\GameDev\EndlessRunner\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+E:\Dev\Uni\GameDev\EndlessRunner\Temp\UnityVS_bin\Debug\UnityEditor.dll
+E:\Dev\Uni\GameDev\EndlessRunner\Temp\UnityVS_bin\Debug\UnityEngine.dll
+E:\Dev\Uni\GameDev\EndlessRunner\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+E:\Dev\Uni\GameDev\EndlessRunner\Temp\UnityVS_bin\Debug\UnityEngine.xml
+E:\Dev\Uni\GameDev\EndlessRunner\Temp\UnityVS_bin\Debug\UnityEditor.xml
+E:\Dev\Uni\GameDev\EndlessRunner\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+E:\Dev\Uni\GameDev\EndlessRunner\obj\Debug\UnityVS.EndlessRunner.CSharp.csprojResolveAssemblyReference.cache
+E:\Dev\Uni\GameDev\EndlessRunner\obj\Debug\Assembly-CSharp.dll
+E:\Dev\Uni\GameDev\EndlessRunner\obj\Debug\Assembly-CSharp.pdb
