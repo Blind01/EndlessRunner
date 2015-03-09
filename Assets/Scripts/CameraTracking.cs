@@ -9,9 +9,11 @@ public class CameraTracking : MonoBehaviour {
 	public float zOffset = -10.0f;
 	
 	void LateUpdate() {
-		this.transform.position = new Vector3(player.transform.position.x + xOffset,
+		if (player != null) {
+			this.transform.position = new Vector3 (player.transform.position.x + xOffset,
 		                                      player.transform.position.y + yOffset,
 		                                      player.transform.position.z + zOffset);
+		}
 	}
 
 
