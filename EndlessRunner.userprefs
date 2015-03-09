@@ -1,9 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Project\2D Fighting Game\Assets\Scripts\MainScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DoorTrigger.cs">
     <Files>
-      <File FileName="..\..\Project\2D Fighting Game\Assets\Scripts\CubeBoyController.cs" Line="8" Column="16" />
-      <File FileName="..\..\Project\2D Fighting Game\Assets\Scripts\MainScript.cs" Line="15" Column="2" />
+      <File FileName="Assets\Scripts\DoorTrigger.cs" Line="20" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

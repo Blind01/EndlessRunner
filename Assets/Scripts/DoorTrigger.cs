@@ -3,7 +3,7 @@ using System.Collections;
 
 public class DoorTrigger : MonoBehaviour {
 	
-	public GameObject initialObject;
+	private GameObject initialObject;
 	
 	private RoomGenerator roomGenerator;
 	
