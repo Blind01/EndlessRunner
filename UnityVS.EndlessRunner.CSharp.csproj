@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\PlayerStateManager.cs" />
     <Compile Include="Assets\Scripts\RoomGenerator.cs" />
+    <Compile Include="Assets\Scripts\RoomScript_bre.cs" />
     <Compile Include="Assets\Scripts\ShrinkBehaviour.cs" />
     <Compile Include="Assets\Scripts\SprintBehaviour.cs" />
     <Compile Include="Assets\Scripts\StateBehaviour.cs" />
