@@ -1188,6 +1188,7 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &465420228
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,6 +1305,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: .5, y: .5}
+=======
+>>>>>>> origin/master
 --- !u!1 &476482044
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,7 +1347,11 @@ GameObject:
   - 114: {fileID: 531059023}
   m_Layer: 5
   m_Name: Canvas
+<<<<<<< HEAD
   m_TagString: Deadly
+=======
+  m_TagString: Untagged
+>>>>>>> origin/master
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1415,6 +1422,10 @@ RectTransform:
   m_Children:
   - {fileID: 1539168034}
   - {fileID: 1655759177}
+<<<<<<< HEAD
+=======
+  - {fileID: 1452575305}
+>>>>>>> origin/master
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_AnchorMin: {x: 0, y: 0}
@@ -1422,6 +1433,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+<<<<<<< HEAD
 --- !u!1 &594411557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1513,6 +1525,8 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+=======
+>>>>>>> origin/master
 --- !u!1 &671256672
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,7 +1553,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 671256672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
   m_LocalPosition: {x: -15, y: 0, z: .333000004}
+=======
+  m_LocalPosition: {x: -47, y: 0, z: .333000004}
+>>>>>>> origin/master
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 458992410}
@@ -1621,6 +1639,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 124
   m_CollisionDetection: 1
+<<<<<<< HEAD
 --- !u!1 &755602981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1682,6 +1701,8 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 755602981}
+=======
+>>>>>>> origin/master
 --- !u!1 &912860233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1772,33 +1793,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+<<<<<<< HEAD
 --- !u!1 &1539068169
+=======
+--- !u!1 &1452575304
+>>>>>>> origin/master
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
+<<<<<<< HEAD
   - 224: {fileID: 1539068170}
   - 222: {fileID: 1539068172}
   - 114: {fileID: 1539068171}
   m_Layer: 5
   m_Name: Text
+=======
+  - 224: {fileID: 1452575305}
+  - 222: {fileID: 1452575307}
+  - 114: {fileID: 1452575306}
+  m_Layer: 5
+  m_Name: RoomText
+>>>>>>> origin/master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 --- !u!224 &1539068170
+=======
+--- !u!224 &1452575305
+>>>>>>> origin/master
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1539068169}
+=======
+  m_GameObject: {fileID: 1452575304}
+>>>>>>> origin/master
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+<<<<<<< HEAD
   m_Father: {fileID: 465420232}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
@@ -1807,37 +1849,71 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1539068171
+=======
+  m_Father: {fileID: 531059026}
+  m_RootOrder: 2
+  m_AnchorMin: {x: .5, y: .5}
+  m_AnchorMax: {x: .5, y: .5}
+  m_AnchoredPosition: {x: 0, y: 242}
+  m_SizeDelta: {x: 200, y: 30}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1452575306
+>>>>>>> origin/master
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1539068169}
+=======
+  m_GameObject: {fileID: 1452575304}
+>>>>>>> origin/master
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
+<<<<<<< HEAD
   m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
+=======
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+>>>>>>> origin/master
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
+<<<<<<< HEAD
     m_Alignment: 4
+=======
+    m_Alignment: 0
+>>>>>>> origin/master
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
+<<<<<<< HEAD
   m_Text: Restart
 --- !u!222 &1539068172
+=======
+  m_Text: 'Room: '
+--- !u!222 &1452575307
+>>>>>>> origin/master
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1539068169}
+=======
+  m_GameObject: {fileID: 1452575304}
+>>>>>>> origin/master
 --- !u!1 &1539168032
 GameObject:
   m_ObjectHideFlags: 0
@@ -1895,8 +1971,13 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
+<<<<<<< HEAD
   m_AnchoredPosition: {x: 100.019997, y: -25}
   m_SizeDelta: {x: 160, y: 30}
+=======
+  m_AnchoredPosition: {x: 113.800003, y: -25}
+  m_SizeDelta: {x: 200, y: 30}
+>>>>>>> origin/master
   m_Pivot: {x: .5, y: .5}
 --- !u!222 &1539168035
 CanvasRenderer:
@@ -1962,7 +2043,11 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -150, y: -25}
+<<<<<<< HEAD
   m_SizeDelta: {x: 160, y: 30}
+=======
+  m_SizeDelta: {x: 200, y: 30}
+>>>>>>> origin/master
   m_Pivot: {x: .5, y: .5}
 --- !u!222 &1655759178
 CanvasRenderer:
@@ -2000,11 +2085,19 @@ MonoBehaviour:
   Player: {fileID: 185956, guid: 16cced441460c164e9843ae3495b6f48, type: 2}
   killBarrier: {fileID: 671256672}
   rooms: []
+<<<<<<< HEAD
   distanceText: {fileID: 1539168033}
   barrierText: {fileID: 1655759176}
   restartButton: {fileID: 465420229}
   buttonCanvas: {fileID: 594411558}
   summaryBackground: {fileID: 755602982}
+=======
+  barrierSpeedupDistance: 50
+  barrierSpeedupAmount: 1
+  distanceText: {fileID: 1539168033}
+  barrierText: {fileID: 1655759176}
+  roomText: {fileID: 1452575306}
+>>>>>>> origin/master
 --- !u!4 &1931683710
 Transform:
   m_ObjectHideFlags: 0
@@ -2116,6 +2209,7 @@ MonoBehaviour:
   xOffset: 2
   yOffset: 6
   zOffset: -20
+<<<<<<< HEAD
 --- !u!1 &2117457033
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,3 +2283,5 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+=======
+>>>>>>> origin/master
