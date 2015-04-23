@@ -1,0 +1,77 @@
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics (ID=0x152)
+    Vendor:   Intel
+    VRAM:     128 MB
+Default GameObject Tag: Player already registered
+ 
+(Filename:  Line: 67)
+
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\EndlessRunner\EndlessRunner_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\EndlessRunner\EndlessRunner_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\EndlessRunner\EndlessRunner_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\EndlessRunner\EndlessRunner_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\EndlessRunner\EndlessRunner_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\EndlessRunner\EndlessRunner_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.128 seconds
+desktop: 1680x1050 59Hz; virtual: 1680x1050 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found.
+<RI> Input initialized.
+Platform assembly: E:\EndlessRunner\EndlessRunner_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\EndlessRunner\EndlessRunner_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 5.347834 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 498.
+Total: 1.779190 ms (FindLiveObjects: 0.029233 ms CreateObjectMapping: 0.016793 ms MarkObjects: 0.262478 ms  DeleteObjects: 0.020525 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DoorTrigger.OnTriggerEnter (UnityEngine.Collider hit) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 1.444562 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 176 unused Assets to reduce memory usage. Loaded Objects now: 203.
+Total: 1.343800 ms (FindLiveObjects: 0.021458 ms CreateObjectMapping: 0.017415 ms MarkObjects: 0.200279 ms  DeleteObjects: 0.237598 ms)
+
+UnloadTime: 0.899702 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 192.
+Total: 0.874823 ms (FindLiveObjects: 0.013683 ms CreateObjectMapping: 0.013061 ms MarkObjects: 0.199657 ms  DeleteObjects: 0.004664 ms)
+
+UnloadTime: 1.013215 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 223.
+Total: 0.894726 ms (FindLiveObjects: 0.015860 ms CreateObjectMapping: 0.013994 ms MarkObjects: 0.198724 ms  DeleteObjects: 0.004664 ms)
+
+UnloadTime: 1.040893 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 192.
+Total: 0.882597 ms (FindLiveObjects: 0.013994 ms CreateObjectMapping: 0.013061 ms MarkObjects: 0.191260 ms  DeleteObjects: 0.004664 ms)
+
+UnloadTime: 0.859273 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 474.
+Total: 1.114287 ms (FindLiveObjects: 0.026434 ms CreateObjectMapping: 0.021458 ms MarkObjects: 0.271496 ms  DeleteObjects: 0.021458 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at DoorTrigger.OnTriggerEnter (UnityEngine.Collider hit) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+UnloadTime: 1.449227 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 176 unused Assets to reduce memory usage. Loaded Objects now: 203.
+Total: 1.341312 ms (FindLiveObjects: 0.020525 ms CreateObjectMapping: 0.015549 ms MarkObjects: 0.204322 ms  DeleteObjects: 0.229201 ms)
+

@@ -490,6 +490,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a0f42c57ee7b7e49aa0a60c3fc7a7b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+  initialObject: {fileID: 0}
+>>>>>>> origin/Stu's-branch
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

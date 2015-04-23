@@ -21,6 +21,7 @@ public class KillBarrierScript : MonoBehaviour {
 	void Update(){
 		mistLine.SetPosition (0, startPoint.position);
 		mistLine.SetPosition (1, endPoint.position);
+<<<<<<< HEAD
 	}
 
 	// Update is called once per frame
@@ -30,4 +31,15 @@ public class KillBarrierScript : MonoBehaviour {
 
 	}
 	
+=======
+
+	
+		transform.position += Vector3.right * chaseSpeed * Time.deltaTime;
+
+	}
+
+	public void BarrierSpeedup(float increment){
+		chaseSpeed += increment;
+	}
+>>>>>>> origin/master
 }
