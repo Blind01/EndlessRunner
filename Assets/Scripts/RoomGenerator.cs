@@ -8,18 +8,25 @@ public class RoomGenerator : MonoBehaviour {
 	public GameObject killBarrier;
 	public GameObject[] rooms;
 
+	public int barrierSpeedupDistance = 100;
+	public float barrierSpeedupAmount = 1f;
+
 	public Text distanceText;
 	public Text barrierText;
-	public Button restartButton;
-	public Canvas buttonCanvas;
-	public Image  summaryBackground;
+	public Text roomText;
 
 	private GameObject previousRoom;
 	private GameObject currentRoom;
 	private GameObject nextRoom;
 	private GameObject player;
+	private KillBarrierScript killBarrierScript;
 
-
+	int pDistance =  0; //player distance
+	int bDistance = 0; //barrier distance
+	int lastPDistance =  0;
+	float multiplier = 1.0f;
+	int pickupCounter = 0;
+	int roomCounter = 1;
 	
 
 	// Use this for initialization
@@ -45,29 +52,35 @@ public class RoomGenerator : MonoBehaviour {
 	}
 
 	void Start(){
-		summaryBackground.enabled = false;
-		buttonCanvas.enabled = false;
-		restartButton.enabled = false;
 
-
+		killBarrierScript = killBarrier.gameObject.GetComponent<KillBarrierScript> ();
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (player != null) {
-			int pDistance = (int)Vector3.Distance (transform.position, player.transform.position);
-			int bDistance = (int)Vector3.Distance (player.transform.position, killBarrier.transform.position);
+			pDistance = (int)Vector3.Distance (transform.position, player.transform.position);
+			bDistance = (int)Vector3.Distance (player.transform.position, killBarrier.transform.position);
+
+			if(pDistance - lastPDistance >= barrierSpeedupDistance){
+				lastPDistance = pDistance;
+				killBarrierScript.BarrierSpeedup(barrierSpeedupAmount);
+			}
 
 			distanceText.text = "Distance: " + pDistance + "m";
 			barrierText.text = "Barrier: " + bDistance + "m";
 		}
+
+		roomText.text = "Room: " + roomCounter;
 	}
 
 	public void newRoom(){
 		Destroy (previousRoom);
 		previousRoom = currentRoom;
 		currentRoom = nextRoom;
+
+		roomCounter++;
 
 		GameObject[] door = GameObject.FindGameObjectsWithTag("Door");
 
@@ -81,14 +94,11 @@ public class RoomGenerator : MonoBehaviour {
 	}
 
 	public void endGame(){
-		Destroy (player);
-		Destroy (killBarrier);
-		summaryBackground.enabled = true;
-		buttonCanvas.enabled = true;
-		restartButton.enabled = true;
-	}
-
-	public void restartGame(){
-		Application.LoadLevel (Application.loadedLevel);
+		PlayerPrefs.SetInt("distance", pDistance);
+		PlayerPrefs.SetFloat ("multiplier", multiplier);
+		PlayerPrefs.SetInt ("pickups", pickupCounter);
+		PlayerPrefs.SetInt ("rooms", roomCounter);
+		Application.LoadLevel ("SummaryScreen");
+	
 	}
 }
