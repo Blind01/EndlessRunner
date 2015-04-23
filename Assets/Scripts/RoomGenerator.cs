@@ -8,17 +8,29 @@ public class RoomGenerator : MonoBehaviour {
 	public GameObject killBarrier;
 	public GameObject[] rooms;
 
+<<<<<<< HEAD
+	public Text distanceText;
+	public Text barrierText;
+	public Button restartButton;
+	public Canvas buttonCanvas;
+	public Image  summaryBackground;
+=======
 	public int barrierSpeedupDistance = 100;
 	public float barrierSpeedupAmount = 1f;
 
 	public Text distanceText;
 	public Text barrierText;
 	public Text roomText;
+>>>>>>> origin/master
 
 	private GameObject previousRoom;
 	private GameObject currentRoom;
 	private GameObject nextRoom;
 	private GameObject player;
+<<<<<<< HEAD
+
+
+=======
 	private KillBarrierScript killBarrierScript;
 
 	int pDistance =  0; //player distance
@@ -27,6 +39,7 @@ public class RoomGenerator : MonoBehaviour {
 	float multiplier = 1.0f;
 	int pickupCounter = 0;
 	int roomCounter = 1;
+>>>>>>> origin/master
 	
 
 	// Use this for initialization
@@ -52,14 +65,26 @@ public class RoomGenerator : MonoBehaviour {
 	}
 
 	void Start(){
+<<<<<<< HEAD
+		summaryBackground.enabled = false;
+		buttonCanvas.enabled = false;
+		restartButton.enabled = false;
+
+
+=======
 
 		killBarrierScript = killBarrier.gameObject.GetComponent<KillBarrierScript> ();
+>>>>>>> origin/master
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		if (player != null) {
+<<<<<<< HEAD
+			int pDistance = (int)Vector3.Distance (transform.position, player.transform.position);
+			int bDistance = (int)Vector3.Distance (player.transform.position, killBarrier.transform.position);
+=======
 			pDistance = (int)Vector3.Distance (transform.position, player.transform.position);
 			bDistance = (int)Vector3.Distance (player.transform.position, killBarrier.transform.position);
 
@@ -67,12 +92,16 @@ public class RoomGenerator : MonoBehaviour {
 				lastPDistance = pDistance;
 				killBarrierScript.BarrierSpeedup(barrierSpeedupAmount);
 			}
+>>>>>>> origin/master
 
 			distanceText.text = "Distance: " + pDistance + "m";
 			barrierText.text = "Barrier: " + bDistance + "m";
 		}
+<<<<<<< HEAD
+=======
 
 		roomText.text = "Room: " + roomCounter;
+>>>>>>> origin/master
 	}
 
 	public void newRoom(){
@@ -80,8 +109,11 @@ public class RoomGenerator : MonoBehaviour {
 		previousRoom = currentRoom;
 		currentRoom = nextRoom;
 
+<<<<<<< HEAD
+=======
 		roomCounter++;
 
+>>>>>>> origin/master
 		GameObject[] door = GameObject.FindGameObjectsWithTag("Door");
 
 		foreach (GameObject d in door) {
@@ -94,11 +126,23 @@ public class RoomGenerator : MonoBehaviour {
 	}
 
 	public void endGame(){
+<<<<<<< HEAD
+		Destroy (player);
+		Destroy (killBarrier);
+		summaryBackground.enabled = true;
+		buttonCanvas.enabled = true;
+		restartButton.enabled = true;
+	}
+
+	public void restartGame(){
+		Application.LoadLevel (Application.loadedLevel);
+=======
 		PlayerPrefs.SetInt("distance", pDistance);
 		PlayerPrefs.SetFloat ("multiplier", multiplier);
 		PlayerPrefs.SetInt ("pickups", pickupCounter);
 		PlayerPrefs.SetInt ("rooms", roomCounter);
 		Application.LoadLevel ("SummaryScreen");
 	
+>>>>>>> origin/master
 	}
 }
