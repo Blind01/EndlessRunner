@@ -84,7 +84,7 @@ public class RoomGenerator : MonoBehaviour {
 	}
 
 	public void newRoom(){
-		Destroy (previousRoom);
+        Destroy(previousRoom);
 		previousRoom = currentRoom;
 		currentRoom = nextRoom;
 

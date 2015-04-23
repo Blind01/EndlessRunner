@@ -19,9 +19,10 @@ public class DoorTrigger : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider hit){
-		if (!fired) {
+		if (!fired && gameObject != null) {
 			fired = true;
-			roomGenerator.newRoom ();
+            if (roomGenerator != null)
+                roomGenerator.newRoom();
 			Destroy (gameObject);
 		}
 	}
