@@ -6,10 +6,12 @@ public class DoorTrigger : MonoBehaviour {
 	private GameObject initialObject;
 	
 	private RoomGenerator roomGenerator;
+	bool fired;
 	
 	void Start(){
 		initialObject = GameObject.FindGameObjectWithTag("InitialObject");
 		roomGenerator = initialObject.GetComponent<RoomGenerator> ();
+		fired = false;
 	}
 
 	void Update(){
@@ -17,8 +19,12 @@ public class DoorTrigger : MonoBehaviour {
 	}
 	
 	void OnTriggerEnter(Collider hit){
-		roomGenerator.newRoom ();
-		Destroy (gameObject);
+		if (!fired && gameObject != null) {
+			fired = true;
+            if (roomGenerator != null)
+                roomGenerator.newRoom();
+			Destroy (gameObject);
+		}
 	}
 	
 }
