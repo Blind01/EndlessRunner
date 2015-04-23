@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Meshes\CameraScript.cs" />
      <Compile Include="Assets\Scripts\BounceBehaviour.cs" />
      <Compile Include="Assets\Scripts\CameraTracking.cs" />
      <Compile Include="Assets\Scripts\DoorTrigger.cs" />
