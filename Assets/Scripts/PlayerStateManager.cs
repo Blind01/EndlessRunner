@@ -9,12 +9,15 @@ public class PlayerStateManager: MonoBehaviour
     public Transform startPosition;
     public string horizontalMoveAxis;
     public string stateActionAxis;
+    public float speedBoostFactor = 2.0f;
 
+    private bool boost;
     private int m_currentCollidersCount;
     private bool m_inTransition;
     private int m_currentState;
     private Vector3[] m_savedMeshScales;
     private StateBehaviour[] m_behaviours;
+    public float playerSpeedModifier = 1.0f;
 
 	// Use this for initialization
 	void Start ()
@@ -56,10 +59,13 @@ public class PlayerStateManager: MonoBehaviour
         m_behaviours[m_currentState].PerformAction(Input.GetAxis(stateActionAxis));
 
         // if move is requested make appropriate move based on if we are in contact with anything
+        float moveAxisAmount = Input.GetAxis(horizontalMoveAxis);
+        moveAxisAmount += moveAxisAmount * playerSpeedModifier;
         if(m_currentCollidersCount != 0)
-            m_behaviours[m_currentState].horizontalGroundMove(Input.GetAxis(horizontalMoveAxis));
+            m_behaviours[m_currentState].horizontalGroundMove(moveAxisAmount);
         else
-            m_behaviours[m_currentState].horisontalAirMove(Input.GetAxis(horizontalMoveAxis));
+            m_behaviours[m_currentState].horisontalAirMove(moveAxisAmount);
+            
 	}
 
     void OnCollisionEnter(Collision col)
@@ -108,5 +114,36 @@ public class PlayerStateManager: MonoBehaviour
         {
             colliders[i].material = m_behaviours[m_currentState].material;
         }
+    }
+
+    public void PlayerSpeedUp(float increment)
+    {
+        playerSpeedModifier += increment;
+        if(boost)
+        foreach(StateBehaviour behaviour in m_behaviours)
+        {
+            behaviour.maxGroundVelocity += increment;
+            behaviour.maxAirVelocity += increment;
+        }
+    }
+
+    public void SpeedBoost(float boostTime)
+    {
+        StartCoroutine(ApplySpeedBoost(boostTime));
+    }
+
+    public bool IsBoosted()
+    {
+        return boost;
+    }
+
+    private IEnumerator ApplySpeedBoost(float boostTime)
+    {
+        boost = true;
+        playerSpeedModifier += speedBoostFactor;
+        yield return new WaitForSeconds(boostTime);
+        playerSpeedModifier -= speedBoostFactor;
+        boost = false;
+        yield return null;
     }
 }

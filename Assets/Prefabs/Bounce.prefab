@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11408830}
   m_Layer: 0
   m_Name: Bounce
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68,17 +68,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6445105fd5d3a4447be4238efdbdbb0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mass: 1
-  drag: .00999999978
-  maxGroundVelocity: 6
+  mass: 10
+  drag: .100000001
+  maxGroundVelocity: 8
   maxAirVelocity: 8
-  airControlForce: 6
-  groundControlForce: 9
+  airControlForce: 20
+  groundControlForce: 300
   hasMaxFallVelocity: 0
   maxFallVelocity: -2
   SelectStateInputCommand: Fire1
   material: {fileID: 13400000, guid: 8d5d60e32e3c43948b09f4f9d0ab9675, type: 2}
-  jumpForce: 350
+  jumpForce: 4000
   jumpCommandDelay: .5
 --- !u!1001 &100100000
 Prefab:

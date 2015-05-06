@@ -13,7 +13,7 @@ GameObject:
   - 114: {fileID: 11463852}
   m_Layer: 0
   m_Name: Sprint
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mass: 1
-  drag: .0500000007
+  drag: 5
   maxGroundVelocity: 10
   maxAirVelocity: 5
   airControlForce: 3

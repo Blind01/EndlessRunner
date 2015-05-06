@@ -21,6 +21,7 @@ public class RoomGenerator : MonoBehaviour {
 	private GameObject nextRoom;
 	private GameObject player;
 	private KillBarrierScript killBarrierScript;
+    private PlayerStateManager playerStateManager;
 
 	int pDistance =  0; //player distance
 	int bDistance = 0; //barrier distance
@@ -50,14 +51,14 @@ public class RoomGenerator : MonoBehaviour {
 		Destroy (tempObj);
 
 		player = Instantiate (Player) as GameObject;
-
+        player.name = "Player";
 	}
 
 	void Start(){
 
 		killBarrierScript = killBarrier.gameObject.GetComponent<KillBarrierScript> ();
+        playerStateManager = player.GetComponent<PlayerStateManager>();
 		pauseMenu.enabled = false;
-
 	}
 	
 	// Update is called once per frame
@@ -74,6 +75,7 @@ public class RoomGenerator : MonoBehaviour {
 			if(pDistance - lastPDistance >= barrierSpeedupDistance){
 				lastPDistance = pDistance;
 				killBarrierScript.BarrierSpeedup(barrierSpeedupAmount);
+                playerStateManager.PlayerSpeedUp(barrierSpeedupAmount);
 			}
 
 			distanceText.text = "Distance: " + pDistance + "m";

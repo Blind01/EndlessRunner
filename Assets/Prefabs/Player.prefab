@@ -11,7 +11,7 @@ GameObject:
   - 136: {fileID: 13685952}
   m_Layer: 0
   m_Name: xNegCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +27,7 @@ GameObject:
   - 136: {fileID: 13685954}
   m_Layer: 0
   m_Name: zNeg
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62,7 +62,7 @@ GameObject:
   - 136: {fileID: 13685956}
   m_Layer: 0
   m_Name: yCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,7 +78,7 @@ GameObject:
   - 136: {fileID: 13685958}
   m_Layer: 0
   m_Name: zPosCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +94,7 @@ GameObject:
   - 136: {fileID: 13685960}
   m_Layer: 0
   m_Name: xPosCollider
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -237,6 +237,8 @@ MonoBehaviour:
   startPosition: {fileID: 0}
   horizontalMoveAxis: Horizontal
   stateActionAxis: Jump
+  speedBoostFactor: 2
+  playerSpeedModifier: 0
 --- !u!136 &13685952
 CapsuleCollider:
   m_ObjectHideFlags: 1
